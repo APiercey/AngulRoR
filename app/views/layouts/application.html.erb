@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html ng-app="App">
+<head>
+  <title>Start of an AngulRoR App</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <script>document.write('<base href="http://' + window.location.host + '/" target="_self">');</script>
+  <%= csrf_meta_tags %>
+</head>
+<body ng-controller="ApplicationCtrl">
+	<div ng-view></div>
+</body>
+</html>
